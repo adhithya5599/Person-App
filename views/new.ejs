@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+
+<div>
+  <div>Add Person</div>
+  <form action="/person" method="POST">
+    <div>
+      <label>Name</label>
+      <input type="text" name="pers[name]" placeholder="name">
+    </div>
+    <div class="field">
+      <label>Birthday</label>
+      <input type="date" name="pers[birthday]" placeholder="birthday">
+    </div>
+    <input type="Submit">
+  </form>
+</div> 
+
+<%- include("partials/footer") %>

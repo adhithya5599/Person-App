@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+
+<h1>Person Details</h1>	
+<% user.forEach((us) => { %>
+   <div>
+     <h3 id="age"><%= us.name %></h3>
+     <h5 class="birth"><%= us.birthday %></h5>
+   </div>
+<% }) %>
+
+<%- include("partials/footer") %>
